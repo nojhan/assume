@@ -1,5 +1,5 @@
-Assume <a href="https://travis-ci.org/r-lyeh/assume"><img src="https://api.travis-ci.org/r-lyeh/assume.svg?branch=master" align="right" /></a>
-=======
+Assume
+======
 
 - Assume is a smarter assert replacement (C++03).
 - Assume is handy. LHS/RHS values are printed as long as they are `ostream` friendly.
@@ -29,6 +29,8 @@ int main() {
 
 ## Changelog
 
+- v1.0.2 (2019-07-23)
+  - fix a reorder warning
 - v1.0.1 (2015/09/19)
   - Force flushed pipes
 - v1.0.0 (2015/08/07)

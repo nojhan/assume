@@ -6,7 +6,8 @@
 #ifndef ASSUME_HPP_HEADER
 #define ASSUME_HPP_HEADER
 
-#define ASSUME_VERSION "1.0.1" /* (2015/09/19) Force flushed pipes
+#define ASSUME_VERSION "1.0.2" /* (2019-07-23) fix reorder warning
+#define ASSUME_VERSION "1.0.1" // (2015/09/19) Force flushed pipes
 #define ASSUME_VERSION "1.0.0" // (2015/08/07) Initial C++03 version */
 
 #include <cassert>
@@ -19,8 +20,8 @@
 
 namespace assume {
     class check {
-        bool ok;
         std::deque< std::string > xpr;
+        bool ok;
         template<typename T> static std::string to_str( const T &t ) { std::stringstream ss; return (ss << t) ? ss.str() : "??"; }
     public:
         check( const char *const text, const char *const file, int line, bool result )
